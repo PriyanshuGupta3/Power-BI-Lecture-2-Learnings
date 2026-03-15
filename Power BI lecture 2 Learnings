@@ -1,0 +1,141 @@
+# 📊 Power BI — Study Notes
+> **Author:** Priyanshu Kumar Gupta  
+> **Lecture:** 2 | **Date:** 26/02/2026
+
+---
+
+## 📌 Table of Contents
+1. [Data Sources](#1-data-sources)
+2. [Data Storage & ETL Process](#2-data-storage--etl-process)
+3. [Data Connection Modes](#3-data-connection-modes)
+4. [Live Connection](#4-live-connection)
+5. [Power BI Service](#5-power-bi-service)
+6. [Data Visualization](#6-data-visualization)
+7. [Report vs Dashboard vs Tiles](#7-report-vs-dashboard-vs-tiles)
+8. [Building Blocks of Power BI](#8-building-blocks-of-power-bi)
+
+---
+
+## 1. Data Sources
+
+In Power BI, we can import data from a variety of sources, including:
+
+- **Excel**
+- **SQL Server**
+- **Azure**
+- Any other supported system/platform
+
+After collecting the data, we can create **visualizations** to gain meaningful insights and make informed decisions for **business growth**.
+
+---
+
+## 2. Data Storage & ETL Process
+
+Power BI data is stored as a **`.pbix`** file locally.
+
+When using **Power BI Service**, the data is stored on **Azure Blob Storage**.
+
+### 🔄 ETL Process
+ETL (Extract, Transform, Load) is completed before data reaches the storage stage.
+
+| Step | Description |
+|------|-------------|
+| **Extract** | Fetching the raw data from the source |
+| **Transform** | Pre-processing / cleaning the data |
+| **Load** | Saving the snapshot to carry out analysis |
+
+---
+
+## 3. Data Connection Modes
+
+When we open Power BI Desktop, we are given multiple options to connect to data. Power BI can connect to various sources and allows us to **import** data from them.
+
+### 📥 Import Mode
+- Data is **loaded and stored** inside Power BI.
+- Data is stored in **Power BI's internal database** with a **1 GB limit**.
+- We can perform **transformations and manipulations** on the data.
+- Data **refreshes 8 times a day** with a **Normal license** and **48 times a day** with a **Premium/Pro license**.
+
+---
+
+## 4. Live Connection
+
+**Live Connection** is a way to connect to a data source where data is **NOT imported or stored** in Power BI. Instead, Power BI **directly queries the source** in real-time.
+
+### ⚙️ How it Works
+- Power BI sends queries **directly to the data source**.
+- Data stays **at the source** — nothing is loaded into Power BI.
+- Every visual interaction **fetches live/real-time data** from the source.
+
+### ✅ Key Characteristics
+- ❌ Data is **not imported** into Power BI
+- ✅ Data is always **real-time**
+- ❌ **No data transformations** allowed in Power Query
+- ❌ **Cannot modify** the data model
+- Power BI queries the source **directly** when users interact with a report
+
+---
+
+## 5. Power BI Service
+
+**Power BI Service** is a **cloud-based** platform used by organizations to:
+
+- **Develop and share** dashboards
+- Used for **organizational storage**
+- Consumers can **log in via the mobile app** and view the latest reports and dashboards on their phone
+
+---
+
+## 6. Data Visualization
+
+Data Visualization helps us **understand data** by identifying **patterns** using visuals.
+
+### 📈 Features
+- We can **extract and combine** data from multiple sources.
+- Data can be gathered and combined to create a **universal view**.
+- Visualizations in Power BI include: **graphs, charts, maps, and more**.
+- These can be used across **Slicers** and to **calculate** custom measures in reports.
+
+---
+
+## 7. Report vs Dashboard vs Tiles
+
+### 📄 Report
+- A **collection of visualizations** displayed across **multiple pages**.
+- Provides visualizations on more than one page.
+
+### 📊 Dashboard
+- Displays the **most important information** on a **single screen**.
+- Shows which **aspect of storytelling** is most critical at a glance.
+
+### 🟦 Tiles
+- Tiles are the **visualizations pinned** to a dashboard.
+- They are called **"dashboard tiles"**.
+- They represent a **pinned visual from various reports**.
+- The tiles can also be **customized**, which helps in changing up the story they tell.
+
+---
+
+## 8. Building Blocks of Power BI
+
+| Block | Description |
+|-------|-------------|
+| **Datasets** | The data imported or connected from various sources |
+| **Reports** | Collection of visualizations on multiple pages |
+| **Dashboards** | Single-page overview pinned from reports |
+| **Tiles** | Individual visual units pinned to a dashboard |
+| **Apps** | Packaged sets of dashboards and reports shared in the org |
+
+---
+
+## 🔑 Key Takeaways
+
+- Power BI connects to data via **Import**, **DirectQuery**, or **Live Connection**
+- **ETL** (Extract → Transform → Load) is the backbone of data processing
+- **Live Connection** = Real-time | No data storage | Read-only
+- **Import Mode** = Stored locally in `.pbix` | Refresh limits apply
+- **Power BI Service** = Cloud-based | Azure Blob Storage | Mobile accessible
+
+---
+
+*Notes prepared by **Priyanshu Kumar Gupta** — Power BI Learning Series*
